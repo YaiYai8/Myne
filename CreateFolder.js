@@ -1,10 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-
 const code = `
-const dirPath = path.join('C:', 'Temp', 'YAIR');
-if (!fs.existsSync(dirPath)) {
-    fs.mkdirSync(dirPath, { recursive: true });
-}
+console.log("This is code running via eval.");
+alert("This is a message from eval.");
 `;
+
+// Run the code using eval
 eval(code);
