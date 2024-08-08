@@ -7,5 +7,3 @@ if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });
 }
 `;
-
-eval(code);
